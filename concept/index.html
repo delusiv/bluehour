@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Blue Hour — Concept homepage</title>
+<meta name="robots" content="noindex" />
+<meta name="color-scheme" content="light only" />
+<meta name="theme-color" content="#0A1A2F" />
+
+<!--
+	CONCEPT — a cultural strategy company shot by a filmmaker.
+	Roughly 70% plain agency architecture (what we do, work, people, contact) and 30% cinematic interaction:
+	  1. Hero reel: a ~20s loop moving through observation, culture, origin, intervention and response.
+	  2. Method film (#method): scroll drives a moving viewfinder through signal, observation, interpretation, intervention and response,
+	     then the last frame turns into the first case study.
+	  3. Reactive index (#work): hovering a project turns the whole section into that project's world.
+
+	Footage: every <img> in .shot and .film-layer can be swapped for
+	  <video src="..." muted playsinline preload="auto"></video>
+	Hero videos play while their shot is on screen; method-film videos are scrubbed by scroll (short clips encoded with frequent
+	keyframes scrub best, e.g. ffmpeg -g 1).
+
+	PLACEHOLDER copy to confirm: service descriptions, project names/questions in #work, and film captions.
+-->
+
+<link rel="icon" type="image/png" href="../assets/images/favicon.png?v=2a3a857e" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;1,400&family=Figtree:wght@300;400;500;600&family=Courier+Prime:wght@700&family=Barlow:wght@400;800&family=Crimson+Text&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" href="../assets/img/container05-17aac59e.webp" />
+<link rel="stylesheet" href="../assets/css/site.css" />
+<link rel="stylesheet" href="concept.css" />
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+
+<a class="skip" href="#services">Skip to content</a>
+
+<header class="site-header" id="header">
+	<a class="brand" href="#top" aria-label="Blue Hour — back to top">
+		<img class="logo-dark" src="../assets/img/logo.png" alt="Blue Hour — Cultural Flow Intelligence" width="899" height="174" />
+		<img class="logo-light" src="../assets/img/logo-light.png" alt="" width="899" height="174" />
+	</a>
+	<nav class="nav" id="nav" aria-label="Main">
+		<ul>
+			<li><a href="#services">What we do</a></li>
+			<li><a href="#method">How we work</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#people">People</a></li>
+			<li><a class="nav-cta" href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<button class="menu-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu">
+		<span></span><span></span><span></span>
+	</button>
+</header>
+
+<main>
+
+	<!-- Hero reel — five shots in method order, each ~4s, crossfading with a slow drift so the loop never visibly restarts -->
+	<section class="reel" id="top" aria-label="Introduction">
+		<div class="reel-shots" aria-hidden="true">
+			<figure class="shot is-on" data-stage="Observation" data-note="At the shelf" style="--ox:30%;--oy:60%"><img src="../assets/img/container05-17aac59e.webp" alt="" /></figure>
+			<figure class="shot" data-stage="Culture" data-note="Through the shop window" style="--ox:70%;--oy:40%"><img src="../assets/img/container05-05c222aa.webp" alt="" decoding="async" /></figure>
+			<figure class="shot" data-stage="Origin" data-note="Where it is grown" style="--ox:20%;--oy:50%"><img src="../assets/img/container38.webp" alt="" decoding="async" /></figure>
+			<figure class="shot" data-stage="Intervention" data-note="Inside the retail space" style="--ox:60%;--oy:70%"><img src="../assets/img/container11.webp" alt="" decoding="async" /></figure>
+			<figure class="shot" data-stage="Response" data-note="What people actually ate" style="--ox:50%;--oy:30%"><img src="../assets/img/container05-be65a31d.webp" alt="" decoding="async" /></figure>
+		</div>
+		<div class="grade" aria-hidden="true"></div>
+		<div class="grain" aria-hidden="true"></div>
+
+		<div class="slate" aria-hidden="true">
+			<span class="slate-num">01</span>
+			<span class="slate-stage">Observation</span>
+			<span class="slate-note">At the shelf</span>
+			<ol class="slate-bars"><li></li><li></li><li></li><li></li><li></li></ol>
+		</div>
+
+		<div class="wrap reel-copy">
+			<h1>
+				<span class="line">We find where culture is moving.</span>
+				<span class="line"><em>Then help brands move with it.</em></span>
+			</h1>
+			<p class="offer">Strategy <i>·</i> Research <i>·</i> Brand worlds <i>·</i> Activation</p>
+			<div class="reel-actions">
+				<a class="cta" href="#contact">Start a conversation
+					<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h12M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+				</a>
+				<a class="ghost" href="#work">See the work</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- [01] What we do — the commercial offer, stated plainly -->
+	<section class="services" id="services">
+		<div class="wrap sec">
+			<header class="sec-label">
+				<span class="sec-num">[01]</span>
+				<h2 class="sec-title">What we do</h2>
+			</header>
+			<div class="sec-body">
+				<p class="services-lead" data-reveal>A food-culture consultancy in Auckland and Fukuoka. We go into the field to see what is actually changing, then turn it into <em>strategy, brands and launches</em>.</p>
+
+				<!-- PLACEHOLDER: service descriptions and "Hire us for" lists are a first draft -->
+				<ol class="offers" data-reveal>
+					<li class="offer-card">
+						<span class="offer-num">01</span>
+						<h3>Strategy</h3>
+						<p>Where your brand sits inside a cultural shift, and what to do about it.</p>
+						<ul>
+							<li>Repositioning a stalled brand</li>
+							<li>Launch and market-entry strategy</li>
+							<li>Category and trend mapping</li>
+						</ul>
+					</li>
+					<li class="offer-card">
+						<span class="offer-num">02</span>
+						<h3>Research</h3>
+						<p>Design ethnography in markets, shelves, kitchens and homes.</p>
+						<ul>
+							<li>In-market field immersions</li>
+							<li>Shelf and shopper observation</li>
+							<li>Interviews with the people who matter</li>
+						</ul>
+					</li>
+					<li class="offer-card">
+						<span class="offer-num">03</span>
+						<h3>Brand worlds</h3>
+						<p>The story, language and look a product needs to make sense in a new place.</p>
+						<ul>
+							<li>Brand meaning and narrative</li>
+							<li>Cross-cultural brand translation</li>
+							<li>Packaging and retail cues</li>
+						</ul>
+					</li>
+					<li class="offer-card">
+						<span class="offer-num">04</span>
+						<h3>Activation</h3>
+						<p>Tastings, placements and launches designed so you learn from them.</p>
+						<ul>
+							<li>Tastings and pop-ups</li>
+							<li>In-store pilots</li>
+							<li>Launch content shot in the field</li>
+						</ul>
+					</li>
+				</ol>
+
+				<div class="fit" data-reveal>
+					<p>We are usually brought in at inflection points: <em>stalled launches, redesigns, brands going abroad.</em></p>
+					<ul class="fit-sectors" aria-label="Sectors">
+						<li>Plant-based &amp; alternative proteins</li>
+						<li>Food retail</li>
+						<li>Cross-cultural brand translation</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- [02] How we work — scroll-driven film. The viewfinder moves through the method; its last frame becomes the first case study. -->
+	<section class="film" id="method" aria-label="How we work">
+		<div class="film-stick">
+			<div class="film-layers" aria-hidden="true">
+				<div class="film-layer"><img src="../assets/img/container05-05c222aa.webp" alt="" loading="lazy" decoding="async" /></div>
+				<div class="film-layer"><img src="../assets/img/container05-17aac59e.webp" alt="" loading="lazy" decoding="async" /></div>
+				<div class="film-layer"><img src="../assets/img/container05-a54a691f.webp" alt="" loading="lazy" decoding="async" /></div>
+				<div class="film-layer"><img src="../assets/img/container11.webp" alt="" loading="lazy" decoding="async" /></div>
+				<div class="film-layer"><img src="../assets/img/container05-be65a31d.webp" alt="" loading="lazy" decoding="async" /></div>
+				<div class="film-layer is-case" style="--tint:#3d5a26"><img src="../assets/img/container38.webp" alt="" loading="lazy" decoding="async" /></div>
+			</div>
+			<div class="viewfinder" aria-hidden="true">
+				<i></i><i></i><i></i><i></i>
+				<span class="timecode">00:00:00:00</span>
+			</div>
+
+			<div class="film-top wrap">
+				<p class="film-kicker"><span class="sec-num">[02]</span> How we work</p>
+				<ol class="film-rail" aria-hidden="true">
+					<li>Signal</li><li>Observation</li><li>Interpretation</li><li>Intervention</li><li>Response</li>
+				</ol>
+			</div>
+
+			<div class="film-text wrap">
+				<article class="ch">
+					<span class="ch-num">01 / Signal</span>
+					<h3>Something small starts showing up.</h3>
+					<p>A new flavour on a konbini shelf at 11pm. A dish a creator keeps coming back to. We log signals across markets, not just headlines.</p>
+				</article>
+				<article class="ch">
+					<span class="ch-num">02 / Observation</span>
+					<h3>Then we go and look.</h3>
+					<p>Markets, shelves, kitchens, homes. Who rushes and who lingers, what people reach for, where they hesitate.</p>
+				</article>
+				<article class="ch">
+					<span class="ch-num">03 / Interpretation</span>
+					<h3>We read it from several angles at once.</h3>
+					<p>Ethnography, psychology and retail, layered until one picture holds: what it means, who it is for, and why it is moving now.</p>
+				</article>
+				<article class="ch">
+					<span class="ch-num">04 / Intervention</span>
+					<h3>We put something into the world.</h3>
+					<p>A tasting, a shelf placement, a reframed brand story. Small, deliberate moves designed to be learned from.</p>
+				</article>
+				<article class="ch">
+					<span class="ch-num">05 / Response</span>
+					<h3>And watch what people actually do.</h3>
+					<p>Picking up, comparing, tasting, putting back. That response is the evidence your next decision rests on.</p>
+				</article>
+				<!-- PLACEHOLDER: featured case copy -->
+				<article class="ch ch-case">
+					<span class="ch-num">Selected work · 01</span>
+					<h3>Homecoming Matcha</h3>
+					<p>Tea, origin and a brand finding its place in a new market.</p>
+					<a class="ghost" href="#work">See the work</a>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- [03] Work — reactive index. Each project carries its own world; hovering (or scrolling on touch) changes the whole section. -->
+	<section class="index" id="work">
+		<div class="worlds" aria-hidden="true">
+			<div class="world is-on" data-world="dusk" style="--tint:#0a1a2f"><img src="../assets/img/container21.webp" alt="" loading="lazy" decoding="async" /></div>
+			<div class="world" data-world="tea" style="--tint:#3d5a26"><img src="../assets/img/container38.webp" alt="" loading="lazy" decoding="async" /></div>
+			<div class="world" data-world="chile" style="--tint:#8a2416"><img src="../assets/img/container05-33a62873.webp" alt="" loading="lazy" decoding="async" /></div>
+			<div class="world" data-world="shelf" style="--tint:#9a5d12"><img src="../assets/img/container05-ec4402e1.webp" alt="" loading="lazy" decoding="async" /></div>
+			<div class="world" data-world="protein" style="--tint:#1f3a66"><img src="../assets/img/container05-aeada409.webp" alt="" loading="lazy" decoding="async" /></div>
+		</div>
+		<div class="wrap sec">
+			<header class="sec-label">
+				<span class="sec-num">[03]</span>
+				<h2 class="sec-title">Selected work</h2>
+			</header>
+			<div class="sec-body">
+				<p class="index-lead" data-reveal>Problems we have worked on.</p>
+				<!-- PLACEHOLDER: project names, tags and questions to confirm -->
+				<ul class="projects">
+					<li><a class="proj" href="#contact" data-world="tea">
+						<span class="proj-num">01</span>
+						<span class="proj-name">Homecoming Matcha</span>
+						<span class="proj-tags">Tea · Brand world</span>
+						<span class="proj-q"><span>How should a tea with deep roots introduce itself to a new market?</span></span>
+					</a></li>
+					<li><a class="proj" href="#contact" data-world="chile">
+						<span class="proj-num">02</span>
+						<span class="proj-name">Chilttepica</span>
+						<span class="proj-tags">Chile · Brand world · Activation</span>
+						<span class="proj-q"><span>How does a heritage chile find a place in everyday cooking?</span></span>
+					</a></li>
+					<li><a class="proj" href="#contact" data-world="shelf">
+						<span class="proj-num">03</span>
+						<span class="proj-name">A New Zealand grocer</span>
+						<span class="proj-tags">Food retail · Field research</span>
+						<span class="proj-q"><span>Why do shoppers hesitate at this shelf, and what would change it?</span></span>
+					</a></li>
+					<li><a class="proj" href="#contact" data-world="protein">
+						<span class="proj-num">04</span>
+						<span class="proj-name">A plant-based protein brand</span>
+						<span class="proj-tags">Alternative protein · Japan · Strategy</span>
+						<span class="proj-q"><span>Why has a promising launch stalled, and who is still with it?</span></span>
+					</a></li>
+				</ul>
+				<div class="index-cta" data-reveal>
+					<a class="cta" href="#contact">Have a problem like these?
+						<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h12M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- [04] People -->
+	<section class="people" id="people">
+		<div class="wrap sec">
+			<header class="sec-label">
+				<span class="sec-num">[04]</span>
+				<h2 class="sec-title">The People</h2>
+			</header>
+			<div class="sec-body">
+				<p class="people-lead" data-reveal>Two researchers, two disciplines, one team. <em>No handoffs between methods. No handoffs between us.</em></p>
+				<div class="people-grid">
+					<article class="person" data-reveal>
+						<div class="portrait"><div class="portrait-frame"><img src="../assets/img/image02.webp" alt="Portrait of Jesse Hsu" width="600" height="600" loading="lazy" decoding="async" /></div></div>
+						<div class="person-head">
+							<h3 class="person-name">Jesse Hsu</h3>
+							<p class="person-role">Food and Sustainability | Design Ethnography</p>
+						</div>
+						<div class="person-bio">
+							<p class="lede">Jesse walks into a shop and notices everything at once. The pace, the mood, the colours, the organisation, the lighting. What feels imported and from where. What’s unique to this place and nowhere else.</p>
+							<p>Across Tokyo, Brighton, Sydney, and Honolulu, his work asks what makes sustainable food routines the default choice — always asking what happens when good ideas try to scale.</p>
+						</div>
+					</article>
+					<article class="person" data-reveal>
+						<div class="portrait"><div class="portrait-frame"><img src="../assets/img/image04.webp" alt="Portrait of Yimei Chuah" width="397" height="397" loading="lazy" decoding="async" /></div></div>
+						<div class="person-head">
+							<h3 class="person-name">Yimei Chuah</h3>
+							<p class="person-role">Developmental Psychology | Health &amp; Well-being</p>
+						</div>
+						<div class="person-bio">
+							<p class="lede">Yimei walks into a store and tunes in to the human landscape. Who rushes and who lingers. How people choose products with certainty, hesitation, and care.</p>
+							<p>A developmental psychology researcher in Auckland, she investigates how children and adults connect with food, the meaning it carries, and its impacts on identity, wellbeing and sustainability.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- [05] Contact -->
+	<section class="contact" id="contact">
+		<div class="wrap sec">
+			<header class="sec-label">
+				<span class="sec-num">[05]</span>
+				<h2 class="sec-title">Contact</h2>
+			</header>
+			<div class="sec-body">
+				<div class="contact-grid" data-reveal>
+					<div class="contact-intro">
+						<p>Curious about whether our work fits your context?</p>
+						<div class="email">
+							<a href="mailto:hello@wearebluehour.co">hello@wearebluehour.co</a>
+							<button class="copy-btn" type="button" data-copy="hello@wearebluehour.co" data-copied="Copied">Copy</button>
+						</div>
+					</div>
+					<div>
+						<form id="contact-form" class="form" method="post" novalidate
+							data-endpoint=""
+							data-mailto="hello@wearebluehour.co"
+							data-msg-subject="Website enquiry"
+							data-msg-required="Please fill in every field."
+							data-msg-email="Please enter a valid email address."
+							data-msg-error="Sorry, something went wrong. Please email us at hello@wearebluehour.co."
+							data-msg-mailto="Your email app should open with your message ready to send.">
+							<div class="row">
+								<div class="field">
+									<input type="text" name="name" id="f-name" placeholder=" " maxlength="128" required autocomplete="name" />
+									<label for="f-name">Name</label>
+								</div>
+								<div class="field">
+									<input type="email" name="email" id="f-email" placeholder=" " maxlength="128" required autocomplete="email" />
+									<label for="f-email">Email</label>
+								</div>
+							</div>
+							<div class="field hp" aria-hidden="true">
+								<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+							</div>
+							<div class="field">
+								<textarea data-gramm_editor="false" name="message" id="f-message" placeholder=" " maxlength="16384" required></textarea>
+								<label for="f-message">Message</label>
+							</div>
+							<div class="actions">
+								<button class="submit" type="submit">
+									SUBMIT
+									<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h12M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+									<span class="spinner" aria-hidden="true"></span>
+								</button>
+								<p class="form-status" role="status" aria-live="polite"></p>
+							</div>
+						</form>
+						<div class="form-success" role="status" aria-live="polite">Thank you for contacting us. We&#39;ve received your message, and will be in touch shortly.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<footer class="footer">
+	<div class="wrap">
+		<div class="footer-grid">
+			<div class="footer-brand">
+				<img src="../assets/img/logo-light.png" alt="Blue Hour — Cultural Flow Intelligence" width="899" height="174" loading="lazy" />
+				<p>A boutique food-culture consultancy.</p>
+			</div>
+			<nav aria-label="Site">
+				<h2>Site</h2>
+				<ul>
+					<li><a href="#services">What we do</a></li>
+					<li><a href="#method">How we work</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#people">People</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="footer-contact">
+				<h2>Contact</h2>
+				<a href="mailto:hello@wearebluehour.co">hello@wearebluehour.co</a>
+				<div class="clocks" aria-label="Local times">
+					<span>Auckland<b data-tz="Pacific/Auckland">--:--</b></span>
+					<span>Fukuoka<b data-tz="Asia/Tokyo">--:--</b></span>
+				</div>
+			</div>
+		</div>
+		<div class="footer-base">
+			<p>© Blue Hour 2026 · Auckland - Fukuoka</p>
+			<button class="to-top" type="button" aria-label="Back to top">
+				<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+			</button>
+		</div>
+	</div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+<script src="concept.js"></script>
+</body>
+</html>
